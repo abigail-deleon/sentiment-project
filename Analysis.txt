@@ -1,0 +1,32 @@
+Sentiment Analysis - Error Analysis
+
+This project uses TextBlob to classify sentences as Positive, 
+Negative, or Neutral based on polarity scores. While the model 
+performs well on clear sentiment, it struggles with more nuanced 
+language.
+
+1. Negation Example
+Sentence: "The food was not bad."  
+Predicted: Negative  
+Actual: Positive  
+
+Explanation: The model has difficulty handling negation. Although "not
+bad" implies positive sentiment, the presence of the word "bad" leads
+the model to incorrectly classify the sentence as negative. This
+shows that the model relies heavily on individual word sentiment
+rather than full phrase meaning.
+
+2. Sarcasm Example
+Sentence: "Great, another delay. Just what I needed."  
+Predicted: Positive  
+Actual: Negative  
+
+Explanation: The model incorrectly classifies this sentence as positive
+due to the presence of words like "Great." However, the sentence is
+sarcastic and expresses frustration. The model cannot detect sarcasm or
+implied tone, highlighting a limitation of rule-based sentiment analysis
+methods.
+
+Overall, these errors demonstrate that simple sentiment analysis models
+struggle with context, tone, and linguistic complexity, especially when
+meaning depends on more than individual word polarity.

@@ -1,0 +1,21 @@
+# Positive Sentiment 
+I love this phone! -> Positive
+It's amazing. -> Positive
+I am very happy with the service. -> Positive
+The experience was fantastic. -> Positive
+
+# Negative Sentiment
+I hate this product. -> Negative
+This is the worst experience I've ever had. -> Negative
+I am very disappointed with the quality. -> Negative
+The service was terrible. -> Negative
+
+# Neutral Sentiment
+The product is alright. -> Neutral
+The book is on the table. -> Neutral
+The meeting starts at 3 PM. -> Neutral
+This is a laptop. -> Neutral
+
+# Edge Cases
+This movie was sick. -> Negative
+Great, another delay. Just what I needed. -> Positive
