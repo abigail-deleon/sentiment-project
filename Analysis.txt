@@ -5,16 +5,16 @@ Negative, or Neutral based on polarity scores. While the model
 performs well on clear sentiment, it struggles with more nuanced 
 language.
 
-1. Negation Example
-Sentence: "The food was not bad."  
+1. Slang / Context Example
+Sentence: "This movie was sick."  
 Predicted: Negative  
 Actual: Positive  
 
-Explanation: The model has difficulty handling negation. Although "not
-bad" implies positive sentiment, the presence of the word "bad" leads
-the model to incorrectly classify the sentence as negative. This
-shows that the model relies heavily on individual word sentiment
-rather than full phrase meaning.
+Explanation: The model has difficulty interpreting slang and contextual
+meaning. Although "sick" can have a positive meaning in informal language,
+the model interprets it using its traditional negative meaning. This shows
+that the model relies on standard word sentiment rather than understanding
+modern or contextual usage.
 
 2. Sarcasm Example
 Sentence: "Great, another delay. Just what I needed."  
